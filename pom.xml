@@ -6,13 +6,13 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr-aio</artifactId>
-    <version>22.11.18</version>
+    <version>23.08.13</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <solr.version>9.1.0</solr.version>
-        <log4j.version>2.19.0</log4j.version>
+        <solr.version>9.3.0</solr.version>
+        <log4j.version>2.20.0</log4j.version>
     </properties>
 
     <dependencies>
@@ -108,7 +108,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
+            <version>2.13.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
