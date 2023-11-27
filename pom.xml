@@ -6,12 +6,12 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr-aio</artifactId>
-    <version>23.08.13</version>
+    <version>23.11.08</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <solr.version>9.3.0</solr.version>
+        <solr.version>9.4.0</solr.version>
         <log4j.version>2.20.0</log4j.version>
     </properties>
 
@@ -52,6 +52,10 @@
                 <exclusion>
                     <groupId>org.ow2.asm</groupId>
                     <artifactId>*</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -100,11 +104,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -159,6 +158,10 @@
                             <exclude>org.slf4j:*</exclude>
                             <exclude>org.ow2.asm:*</exclude>
                             <exclude>javax.servlet:*</exclude>
+                            <exclude>jakarta.activation:jakarta.activation-api</exclude>
+<!--                            <exclude>jakarta.ws.rs:jakarta.ws.rs-api</exclude>-->
+<!--                            <exclude>jakarta.xml.bind:jakarta.xml.bind-api</exclude>-->
+                            <exclude>org.glassfish.hk2.external:aopalliance-repackaged</exclude>
                         </excludes>
                     </artifactSet>
                     <filters>
