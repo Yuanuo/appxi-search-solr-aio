@@ -6,12 +6,12 @@
 
     <groupId>org.appxi</groupId>
     <artifactId>search-solr-aio</artifactId>
-    <version>24.02.16</version>
+    <version>24.05.16</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <solr.version>9.5.0</solr.version>
+        <solr.version>9.6.0</solr.version>
         <log4j.version>2.22.1</log4j.version>
     </properties>
 
@@ -131,6 +131,7 @@
                     <archive>
                         <manifestEntries>
                             <Automatic-Module-Name>appxi.search.solr.aio</Automatic-Module-Name>
+                            <Multi-Release>true</Multi-Release>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -191,7 +192,7 @@
                     <transformers>
                         <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     </transformers>
-                    <createSourcesJar>true</createSourcesJar>
+                    <createSourcesJar>false</createSourcesJar>
                 </configuration>
             </plugin>
         </plugins>
